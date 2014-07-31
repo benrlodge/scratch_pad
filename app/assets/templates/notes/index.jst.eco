@@ -4,6 +4,7 @@
 
 <% for note in @notes.models: %>
 	<article>
-		<%= note.get('title') %>: <%= note.get('content') %>
+		<h4><%= note.get('title') %></h4>
+		<p><%= note.get('content') %></p>
 	</article>
 <% end %>
