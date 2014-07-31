@@ -3,7 +3,7 @@ class ScratchPad.Routers.Notes extends Backbone.Router
 	routes:
 		'': 'dashboard'
 		'notes': 'notes'
-		'api/:id': 'show'
+		'notes/:id': 'show'
 
 	initialize: ->
 		@collection = new ScratchPad.Collections.Notes()

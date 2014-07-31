@@ -1,5 +1,5 @@
 
-
+<h2> Notes </h2>
 <%= @notes.length %> total notes
 
 <% for note in @notes.models: %>

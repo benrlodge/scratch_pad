@@ -1,0 +1,19 @@
+
+<h2>Tasks</h2>
+
+<input type='text'>
+<button type='button'>New Task</button>
+
+<p><%= @tasks.length %> total tasks</p>
+<hr>
+<ul>
+<% for task in @tasks.models: %>
+	<li>
+		<%= task.get('title') %>
+		| Status: <%= task.get('status') %>
+	</li>
+<% end %>
+</ul>
+
+
+<%= task.get('status') ? false : true %>
