@@ -1,0 +1,8 @@
+<h1>Suck it</h1>
+
+<ul>
+<% for note in @notes.models: %>
+	<li> <%= note.get('title') %> </li>
+<% end %>
+
+</ul>
