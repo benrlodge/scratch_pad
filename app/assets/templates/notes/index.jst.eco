@@ -1,8 +1,9 @@
-<h1>Suck it</h1>
 
-<ul>
+
+<%= @notes.length %> total notes
+
 <% for note in @notes.models: %>
-	<li> <%= note.get('title') %> </li>
+	<article>
+		<%= note.get('title') %>: <%= note.get('content') %>
+	</article>
 <% end %>
-
-</ul>

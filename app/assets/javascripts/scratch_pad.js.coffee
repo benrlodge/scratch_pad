@@ -4,7 +4,6 @@ window.ScratchPad =
 	Views: {}
 	Routers: {}
 	initialize: ->
-		console.log 'hey'
 		new App.Routers.Notes()
 		Backbone.history.start()
 
