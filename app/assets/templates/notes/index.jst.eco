@@ -5,9 +5,9 @@
 </div>
 
 <% for note in @notes.models: %>
-	<article class='m-notes--preview'>
+	<article class='m-notes--preview clearfix'>
 		<h4><%= note.get('title') %></h4>
 		<p><%= note.get('content') %></p>
-		<button type='button' data-id="<%= note.get('id') %>" class='m-notes--expand'>Expand</button>
+		<button type='button' data-id="<%= note.get('id') %>" class='m-notes--expand float-right'>Expand</button>
 	</article>
 <% end %>

@@ -25,14 +25,31 @@
 	float: right;
 }
 
+.m-notes-form--input-title, 
+.m-notes-form--input-content{
+	border: none;
+	outline: none;
+	&:focus{
+		outline: none;
+	}
+}
+
 .m-notes-form--input-title{
 	width: 100%;
-	padding: 3px 0 3px 10px;
-	margin-bottom: 10px;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 0;
+	@extend input-blank;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom: 1px solid $blue-light;
 }
 
 .m-notes-form--input-content{
 	width: 100%;
 	height: 300px;
 	padding: 3px 0 3px 10px;
+	@extend input-blank;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
 }
