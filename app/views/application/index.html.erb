@@ -1,14 +1,9 @@
 
 
-<div class='l-app-wrapper'>
-
-	<header class='header-primary'>
-		<h1> Notez </h1>
-	</header>
+<div class='l-wrapper'>
 
 	<nav class='nav-primary'>
 		<ul class='nav-primary__list inline-list'>
-			<li> <a href="/#">Dashboard</a> </li>
 			<li> <a href="/#notes">Notes</a> </li>
 			<li> <a href="/#tasks">Tasks</a> </li>
 			<li> <a href="/api/notes.json">Notes API</a> </li>
@@ -16,7 +11,15 @@
 	</nav>
 	
 
-	<div id="notes" class='l-notes'>
+	<div id="app-view">
+
+		<div class='l-column l-note-entry'>
+			The entry sectin will be here
+		</div>
+
+		<div class='l-column l-notes'>
+			 <div class='l-notes--list'></div>
+		</div>
 		
 	</div>
 

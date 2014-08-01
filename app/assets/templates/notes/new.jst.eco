@@ -1,0 +1,9 @@
+<header class='m-notes-header'>
+	<h1 class='align-right'>Notes</h1>
+</header>
+
+<div class='m-notes-form'>
+	<input type='text' class='m-notes-form--input-title' placeholder='Add a new note...'> <br>
+	<textarea class='m-notes-form--input-content'></textarea>
+	<button type='button' class='m-notes-form--btn-submit'>Save</button>
+</div>

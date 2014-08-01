@@ -1,0 +1,17 @@
+@import "colors";
+
+.m-search{
+	padding: 10px 0 10px 20px;
+	background: $offwhite;
+	border-bottom: 1px solid #d8e1e6;
+}
+
+.m-search--input-text{
+	background: none;
+	border: none;
+	padding: 5px 0 5px 0;
+
+	&:focus{
+		outline: none;
+	}
+}

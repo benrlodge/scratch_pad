@@ -1,0 +1,10 @@
+
+<%= @notes.length %> total notes
+
+
+<% for note in @notes.models: %>
+	<article>
+		<h4><%= note.get('title') %></h4>
+		<p><%= note.get('content') %></p>
+	</article>
+<% end %>

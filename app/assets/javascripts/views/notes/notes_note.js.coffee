@@ -1,6 +1,6 @@
-class ScratchPad.Views.NotesIndex extends Backbone.View
+class ScratchPad.Views.NotesNote extends Backbone.View
 
-  template: JST['notes/index']
+  template: JST['notes/note']
 
 
   initialize: ->
@@ -10,6 +10,5 @@ class ScratchPad.Views.NotesIndex extends Backbone.View
 
   render: ->
   	console.log '---- RENDERING THE VIEW'
-  	log @collection
   	$(@el).html(@template(notes: @collection))
   	this
