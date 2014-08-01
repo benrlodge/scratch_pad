@@ -22,12 +22,14 @@
 	float: left;
 	width: 400px;
 	background: $blue-light;
-	padding: 10px;
+	padding: 10px 30px 0 30px;
 }
 
 .l-notes{
 	float: left;
 	width: 600px;
-	background: $offwhite-dark;
 	overflow: scroll;
+	background: $offwhite-dark;
+	box-shadow: -3px 0px 5px 0px rgba(31, 45, 61, 0.15);
+
 }

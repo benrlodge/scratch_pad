@@ -1,9 +1,21 @@
 @import "colors";
 
 .m-search{
-	padding: 10px 0 10px 20px;
+	padding: 5px 0 5px 20px;
 	background: $offwhite;
 	border-bottom: 1px solid #d8e1e6;
+	
+	&:before{
+		display: inline-block;
+		position: relative;
+		left: -10px;
+		top: 5px;
+		content: '';
+		height: 24px;
+		width: 23px;
+		background-image: image-url("mag-icon.png");
+	}
+
 }
 
 .m-search--input-text{
@@ -14,4 +26,6 @@
 	&:focus{
 		outline: none;
 	}
+
+
 }
