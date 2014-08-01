@@ -33,4 +33,4 @@ class ScratchPad.Routers.Notes extends Backbone.Router
 		# alert "Entry #{id}"
 		# view = new App.Views.NotesIndex(collection: @collection)
 		# $('#notes .l-note-entry').html(view.render().el)
-		# console.log @collection		
+		# console.log @collection

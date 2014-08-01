@@ -5,5 +5,5 @@
 <div class='m-notes-form'>
 	<input type='text' class='m-notes-form--input-title' placeholder='Title...'> <br>
 	<textarea class='m-notes-form--input-content' placeholder='Notes...'></textarea>
-	<button type='button' class='m-notes-form--btn-submit'>Save</button>
+	<button type='button' class='m-notes-form--btn-submit'>Add Note</button>
 </div>

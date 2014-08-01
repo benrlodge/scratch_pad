@@ -4,10 +4,22 @@
 	<input type='text' placeholder='Search notes...' class='m-search--input-text'>
 </div>
 
-<% for note in @notes.models: %>
-	<article class='m-notes--preview clearfix'>
-		<h4><%= note.get('title') %></h4>
-		<p><%= note.get('content') %></p>
-		<button type='button' data-id="<%= note.get('id') %>" class='m-notes--expand float-right'>Expand</button>
-	</article>
-<% end %>
+<div class='l-notes-container'>
+	<% for note in @notes.models: %>
+		
+		<% ln = note.get('content').length %>
+
+		<article class='m-notes--preview clearfix'>
+			<h4><%= note.get('title') %></h4>
+			<p>
+				<%= note.get('content').substr(0, 200) %>...
+				
+
+
+
+			</p>
+
+			<button type='button' data-id="<%= note.get('id') %>" class='m-notes--expand float-right'>Open Full Note</button>
+		</article>
+	<% end %>
+</div>
